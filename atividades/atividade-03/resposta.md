@@ -28,10 +28,6 @@ void loop() {
 
 2) **Escreva o código para configurar a USART0 com o formato de quadro (8E2) e baud rate de 300 bps.**
 
-$$
-    UBRRn = \frac{fosc}{16BAUD} - 1
-$$
-
 **Solução:**
 
 Valor a ser carregado em UCSR0C para obter configuração 8E2     
