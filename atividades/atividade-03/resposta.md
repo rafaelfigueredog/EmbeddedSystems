@@ -9,7 +9,7 @@ Atividades 03 - USART e SPI (ATmega328)
 | UMSEL01 | UMSEL00 | UPM01 | UPM00 | USBS0 | UCSZ01 | UCSZ0 | UCPOL0 |
 |    0    |    0    |   0   |   0   |   1   |    1   |   0   |    0   | 
 
-    Observação: Para que essa configuração funcione corretamente é necessário que o Bit 2 (UCSZ02) do registrador UCSR0B esteja configurado com valor 0 para que  tamanho do caractere seja definido como 7-bits. 
+**Observação:** Para que essa configuração funcione corretamente é necessário que o Bit 2 (UCSZ02) do registrador UCSR0B esteja configurado com valor 0 para que  tamanho do caractere seja definido como 7-bits. 
 
 ```c++
 #include <Arduino.h>
