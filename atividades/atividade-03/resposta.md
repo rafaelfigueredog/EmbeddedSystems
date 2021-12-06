@@ -75,8 +75,14 @@ void setup() {
   DDRB |= (1 << PINB2) | (1 << PINB3) | (1 << PINB5);
   
   // Habilita a SPI, configura como slave e freq. do clock em fosc/128
-  SPCR = (1 << SPE) | (0 << MSTR) | (1 << SPR1) | (1 << SPR0);
+  SPCR = (1 << SPE) | (1 << SPR1) | (1 << SPR0);
   
+  // get a mask of 8-bits -> 11101111
+  uint8_t mask = ~(1 << MSTR); 
+
+  // set 4-bit to of SPCR as 0 to define SPI as slave mode
+  SPCR &= mask;  
+
 }
 
 void loop() {
