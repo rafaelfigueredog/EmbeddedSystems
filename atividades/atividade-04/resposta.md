@@ -41,3 +41,8 @@ void loop() {
 
 
 **3. Elabore o esquema elétrico para um dispositivo que exiba a mensagem “ATTINY85” e “HD44780” em um display 16x2 utilizando o microcontrolador Attiny85.**    
+
+Circuito com conexão microcontrolador Attiny85 e Display LCD com conexão I2C
+
+![circuit](circuit.png)
+
